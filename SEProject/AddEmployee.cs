@@ -12,9 +12,12 @@ namespace SEProject
 {
     public partial class AddEmployee : Form
     {
-        public AddEmployee()
+        MainForm admin;
+
+        public AddEmployee(MainForm adm)
         {
             InitializeComponent();
+            admin = adm;
         }
 
         private void generateContractButton_Click(object sender, EventArgs e)
@@ -24,10 +27,12 @@ namespace SEProject
             employee.Name = newEmplNameBox.Text;
             employee.Surname = newEmplSurnameBox.Text;
             employee.Address = newEmplAddressBox.Text;
-            employee.Series = newEmpilDSeriesBox.Text;
-            employee.Data = newEmplIDDataBox.Text;
+            employee.Series = newEmplSeriesBox.Text;
+            employee.Data = newEmplDataBox.Text;
             employee.CNP = newEmplCNPBox.Text;
             employee.Job = newEmplJobBox.Text;
+           
+
 
             IBlockEntity.Employees_Table.Add(employee);
 
@@ -39,11 +44,15 @@ namespace SEProject
 
             IBlockEntity.Contract_Table.Add(contract);
             IBlockEntity.SaveChanges();
+
+            admin.updateGrid();
+            this.Close();
         }
 
         private void AddEmployee_Load(object sender, EventArgs e)
         {
 
         }
+
     }
 }

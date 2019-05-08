@@ -37,7 +37,7 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.EditNameBox1 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -125,12 +125,12 @@
             this.textBox2.Size = new System.Drawing.Size(118, 22);
             this.textBox2.TabIndex = 43;
             // 
-            // textBox1
+            // EditNameBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(299, 96);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(118, 22);
-            this.textBox1.TabIndex = 42;
+            this.EditNameBox1.Location = new System.Drawing.Point(299, 96);
+            this.EditNameBox1.Name = "EditNameBox1";
+            this.EditNameBox1.Size = new System.Drawing.Size(118, 22);
+            this.EditNameBox1.TabIndex = 42;
             // 
             // label13
             // 
@@ -319,6 +319,7 @@
             this.button1.TabIndex = 63;
             this.button1.Text = "Edit";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -352,7 +353,7 @@
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.EditNameBox1);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
@@ -368,6 +369,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form2";
             this.Text = "Edit employee";
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -384,7 +386,7 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox EditNameBox1;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;

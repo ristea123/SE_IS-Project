@@ -46,8 +46,8 @@
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.newEmpilDSeriesBox = new System.Windows.Forms.TextBox();
-            this.newEmplIDDataBox = new System.Windows.Forms.TextBox();
+            this.newEmplSeriesBox = new System.Windows.Forms.TextBox();
+            this.newEmplDataBox = new System.Windows.Forms.TextBox();
             this.newEmplCNPBox = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -214,19 +214,19 @@
             this.label20.TabIndex = 67;
             this.label20.Text = "Contract data:";
             // 
-            // newEmpilDSeriesBox
+            // newEmplSeriesBox
             // 
-            this.newEmpilDSeriesBox.Location = new System.Drawing.Point(321, 262);
-            this.newEmpilDSeriesBox.Name = "newEmpilDSeriesBox";
-            this.newEmpilDSeriesBox.Size = new System.Drawing.Size(118, 22);
-            this.newEmpilDSeriesBox.TabIndex = 62;
+            this.newEmplSeriesBox.Location = new System.Drawing.Point(321, 262);
+            this.newEmplSeriesBox.Name = "newEmplSeriesBox";
+            this.newEmplSeriesBox.Size = new System.Drawing.Size(118, 22);
+            this.newEmplSeriesBox.TabIndex = 62;
             // 
-            // newEmplIDDataBox
+            // newEmplDataBox
             // 
-            this.newEmplIDDataBox.Location = new System.Drawing.Point(319, 294);
-            this.newEmplIDDataBox.Name = "newEmplIDDataBox";
-            this.newEmplIDDataBox.Size = new System.Drawing.Size(118, 22);
-            this.newEmplIDDataBox.TabIndex = 59;
+            this.newEmplDataBox.Location = new System.Drawing.Point(319, 294);
+            this.newEmplDataBox.Name = "newEmplDataBox";
+            this.newEmplDataBox.Size = new System.Drawing.Size(118, 22);
+            this.newEmplDataBox.TabIndex = 59;
             // 
             // newEmplCNPBox
             // 
@@ -311,8 +311,8 @@
             this.Controls.Add(this.label24);
             this.Controls.Add(this.label25);
             this.Controls.Add(this.label20);
-            this.Controls.Add(this.newEmpilDSeriesBox);
-            this.Controls.Add(this.newEmplIDDataBox);
+            this.Controls.Add(this.newEmplSeriesBox);
+            this.Controls.Add(this.newEmplDataBox);
             this.Controls.Add(this.newEmplCNPBox);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label13);
@@ -359,8 +359,8 @@
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox newEmpilDSeriesBox;
-        private System.Windows.Forms.TextBox newEmplIDDataBox;
+        private System.Windows.Forms.TextBox newEmplSeriesBox;
+        private System.Windows.Forms.TextBox newEmplDataBox;
         private System.Windows.Forms.TextBox newEmplCNPBox;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label13;
